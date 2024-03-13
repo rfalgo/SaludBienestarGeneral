@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red">
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso (kg)"
+        android:inputType="numberDecimal"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Estatura (cm)"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/editTextWeight"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/btnCalculateBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextHeight"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="18dp"
+        android:text="Calcular IMC" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        android:layout_marginStart="40dp"
+        android:textSize="18sp"
+        android:layout_below="@id/btnCalculateBMI"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Agregar un componente para el gráfico (ejemplo: BarChart) según la biblioteca utilizada -->
+    <!-- Puedes ajustar los atributos según sea necesario -->
+
+    <Button
+        android:id="@+id/btnDeleteRecords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextHeight"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/btnCalculateBMI"
+        android:text="Eliminar Registros" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="24dp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/barChart"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:id="@+id/textViewWeightRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registros de peso:"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:gravity="bottom"
+            android:padding="16dp"/>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/cool_gray">
+
+
+        <TextView
+            android:id="@+id/textViewInformacionPersonal"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:text="Información Personal" />
+
+        <EditText
+            android:id="@+id/editTextNombreCompleto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo: "
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:focusable="true" />
+
+        <EditText
+            android:id="@+id/editTextFechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha nacimento: "
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="8dp"
+            android:inputType="none"
+            android:focusable="false" />
+
+
+
+        <EditText
+            android:id="@+id/editTextGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Genero: "
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:focusable="true" />
+
+        <EditText
+            android:id="@+id/editTextGrupoSanguineo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grupo sanguineo: "
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:focusable="true" />
+
+        <EditText
+            android:id="@+id/editTextContactoEmergencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contacto emergencia: "
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:focusable="true" />
+
+
+        <TextView
+            android:id="@+id/textViewHistoriaClinica"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15sp"
+            android:textSize="22dp"
+            android:text="Historia Clínica " />
+
+        <EditText
+            android:id="@+id/editTextCondicionesPreexistentes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Condiciones Preexistentes: "
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:focusable="true" />
+
+        <EditText
+            android:id="@+id/editTextCirugiasAnteriores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cirugias anteriores: "
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:focusable="true" />
+
+        <EditText
+            android:id="@+id/editTextMedicamentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Medicamentos: "
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:focusable="true" />
+
+        <EditText
+            android:id="@+id/editTextHabitos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hábitos: "
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:focusable="true" />
+
+
+        <TextView
+            android:id="@+id/textViewAlergiasReacciones"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:textSize="22dp"
+            android:text="Alergias y Reacciones" />
+
+        <EditText
+            android:id="@+id/editTextAlergias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alergias: "
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:focusable="true" />
+
+        <EditText
+            android:id="@+id/editTextReaccionesAdversas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reacciones Adversas: "
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:focusable="true" />
+
+
+
+
+        <TextView
+            android:id="@+id/textViewPatologias"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:textSize="22dp"
+            android:text="Patologías" />
+
+        <EditText
+            android:id="@+id/editTextEnfermedades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enfermedades: "
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:focusable="true" />
+
+        <EditText
+            android:id="@+id/editTextFechaDiagnostico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha Diagnostico: "
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:focusable="true" />
+
+        <EditText
+            android:id="@+id/editTextGravedad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gravedad: "
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:focusable="true" />
+
+        <EditText
+            android:id="@+id/editTextTratamientos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tratamientos: "
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:focusable="true" />
+
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:layout_below="@id/editTextTratamientos"
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/btnA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:layout_below="@id/btnGuardar"
+            android:text="A"
+            android:onClick="registroHistoriaClinica"/>
+
+
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red">
+
+
+    <EditText
+        android:id="@+id/etActivityType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:hint="Nombre de actividad:"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cool_gray" />
+
+    <EditText
+        android:id="@+id/etDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etActivityType"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:hint="Duración (minutos):"
+        android:textColorHint="@color/cool_gray"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDuration"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:hint="Calorías quemadas:"
+        android:textColorHint="@color/cool_gray"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCalories"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnSaveActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:text="Guardar Actividad" />
+
+        <Button
+            android:id="@+id/btnDeleteActivities"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginStart="16dp"
+            android:onClick="deleteAllActivities"
+            android:text="Eliminar registros" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/etCalories"
+        android:layout_marginTop="80dp" >
+
+        <TextView
+            android:id="@+id/txtActivities"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Registros de actividad física:\n\n"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:padding="20dp" />
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".asesoria"
+    android:background="@color/cool_green">
+
+    <Button
+        android:id="@+id/btnAsesoriaSincronica"
+        android:layout_width="306dp"
+        android:layout_height="274dp"
+        android:accessibilityLiveRegion="none"
+        android:background="@drawable/soporte_en_linea"
+        android:ellipsize="middle"
+        android:fontFamily="sans-serif"
+        android:onClick="EnterSincronica"
+        android:rotationX="14"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:iconTint="#7D7C7A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        app:strokeColor="@color/cool_gray" />
+
+    <Button
+        android:id="@+id/btnAsesoriaAsincronica"
+        android:layout_width="306dp"
+        android:layout_height="274dp"
+        android:background="@drawable/cliente"
+        android:onClick="EnterAsincronica"
+        android:rotationX="14"
+        app:iconTint="#7D7C7A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.824"
+        app:strokeColor="@color/cool_gray" />
+
+    <TextView
+        android:id="@+id/A1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Asesoría Específica Sincrónica
+        (Opción Premium)"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <TextView
+        android:id="@+id/A2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Asesoría General Asincrónica"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_yellow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextFoodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/cool_gray"
+            android:textColor="@color/black"
+            android:hint="Nombre del alimento: "
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/editTextMealType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/cool_gray"
+            android:textColor="@color/black"
+            android:hint="Tipo de comida (Desayuno, Media Mañana, Almuerzo, Merienda, Cena.): "
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/editTextCaloriesEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/cool_gray"
+            android:textColor="@color/black"
+            android:hint="Calorías: "
+            android:inputType="number"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Nuevos campos para porciones y recomendaciones -->
+        <EditText
+            android:id="@+id/editTextPortions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Porción o Cantidad: "
+            android:textColorHint="@color/cool_gray"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textRecommendation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recomendación: "
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <!-- Botón para guardar la entrada de dieta -->
+            <Button
+                android:id="@+id/btnSaveDietEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="50dp"
+                android:text="Guardar" />
+
+            <!-- Botón para eliminar la última entrada -->
+            <Button
+                android:id="@+id/btnDeleteDietEntry"
+                android:layout_width="223dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Eliminar Última Entrada" />
+
+        </LinearLayout>
+
+        <!-- RecyclerView para mostrar las entradas de la dieta -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewDietEntries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
