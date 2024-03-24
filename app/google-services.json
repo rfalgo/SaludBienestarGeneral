@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "249436926482",
+    "project_id": "saludbienestargeneral-33fd7",
+    "storage_bucket": "saludbienestargeneral-33fd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249436926482:android:8168afaca7cca41e341ecb",
+        "android_client_info": {
+          "package_name": "com.apphealthwellnessgeneral.saludbienestargeneral"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249436926482-5t799sl07img68cb4d7b5rpo2ns1btpq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE5LXGMESfsMgtn_18HIxdkuLWt9VlBQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249436926482-5t799sl07img68cb4d7b5rpo2ns1btpq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
