@@ -1,3 +1,40 @@
 <resources>
     <string name="app_name">SaludBienestarGeneral</string>
+    <string-array name="opciones_genero">
+        <item>Selecciona un género: </item>
+        <item>F</item>
+        <item>M</item>
+        <item>Otro: Cual?</item>
+    </string-array>
+
+    <string-array name="opciones_grupo_sanguineo">
+        <item>Selecciona grupo sanguíneo: </item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <!-- Agrega más opciones según sea necesario -->
+    </string-array>
+
+    <string-array name="calidad_suenio">
+        <item>Seleccione la calidad del sueño (1-5): </item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="tipo_comida">
+        <item>Seleccione tipo de comida: </item>
+        <item>Desayuno</item>
+        <item>Media Mañana</item>
+        <item>Almuerzo</item>
+        <item>Merienda</item>
+        <item>Cena</item>
+    </string-array>
 </resources>

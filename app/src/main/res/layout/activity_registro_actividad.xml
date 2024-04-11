@@ -5,6 +5,69 @@
     android:background="@color/red">
 
 
+    <TextView
+        android:id="@+id/txtSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtScrollView"
+        android:text="Pasos: 0"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Distancia: 0.0 metros"
+        android:textColor="@color/black"
+        android:layout_below="@id/txtSteps"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:text="Calorías quemadas: 0.0 kcal"
+        android:layout_below="@id/txtDistance"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comenzar/Continuar/Guardar"
+        android:layout_below="@id/txtCalories"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restablecer "
+        android:layout_below="@id/btnStart"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="80dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtPasos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnStop"
+        android:text="Registros de pasos, distancia y calorias:\n\n"
+        android:textSize="19.5sp"
+        android:textColor="@color/black"
+        android:padding="15dp" />
+
+
     <EditText
         android:id="@+id/etActivityType"
         android:layout_width="match_parent"
@@ -75,7 +138,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/etCalories"
-        android:layout_marginTop="80dp" >
+        android:layout_marginTop="80dp"
+        android:id="@+id/txtScrollView">
 
         <TextView
             android:id="@+id/txtActivities"
@@ -88,5 +152,7 @@
 
 
     </ScrollView>
+
+
 
 </RelativeLayout>

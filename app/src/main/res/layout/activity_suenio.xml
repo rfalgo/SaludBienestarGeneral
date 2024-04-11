@@ -1,9 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue">
 
-    <!-- Campo de entrada para la hora de inicio del sueño -->
     <EditText
         android:id="@+id/editTextHoraInicio"
         android:layout_width="wrap_content"
@@ -11,87 +11,81 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:hint="Hora de inicio del sueño"
-        android:inputType="none"
+        android:inputType="text"
         android:focusable="false"
         android:focusableInTouchMode="true"
-        android:onClick="seleccionarHoraInicio" />
+        android:onClick="mostrarSelectorHora"
+        />
 
-    <!-- Campo de entrada para la hora de fin del sueño -->
     <EditText
         android:id="@+id/editTextHoraFin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextHoraInicio"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
         android:layout_alignStart="@id/editTextHoraInicio"
         android:hint="Hora de fin del sueño"
-        android:inputType="none"
+        android:inputType="text"
         android:focusable="false"
         android:focusableInTouchMode="true"
-        android:onClick="seleccionarHoraFin" />
+        android:onClick="mostrarSelectorHora"
+        />
 
-    <!-- DatePicker para seleccionar la fecha -->
-    <EditText
-        android:id="@+id/editTextFecha"
-        android:layout_width="wrap_content"
+    <Spinner
+        android:id="@+id/spinnerCalidadSuenio"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:layout_below="@id/editTextHoraFin"
-        android:hint="Fecha: "
-        android:focusableInTouchMode="true"
-        android:layout_marginTop="8dp"
-        android:inputType="none"
-        android:focusable="false"
-        android:layout_alignStart="@id/editTextHoraFin" />
+        android:layout_marginTop="16dp"/>
 
-    <!-- Campo de entrada para la calidad del sueño -->
-    <EditText
-        android:id="@+id/editTextCalidadSueno"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editTextFecha"
-        android:layout_marginTop="8dp"
-        android:layout_alignStart="@id/editTextFecha"
-        android:hint="Calidad del sueño (1-5)" />
-
-    <!-- Botón para calcular la duración del sueño -->
-
-    <!-- Botónes para guardar y eleiminar los datos -->
-    <Button
-        android:id="@+id/botonGuardarDatos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Guardar datos"
-        android:layout_below="@id/editTextCalidadSueno"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignBaseline="@id/botonEliminarDatos"
-        android:layout_marginEnd="8dp"/>
 
     <Button
-        android:id="@+id/botonEliminarDatos"
+        android:id="@+id/btnGuardarDatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Eliminar datos"
-        android:layout_below="@id/editTextCalidadSueno"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"/>
+        android:layout_below="@id/spinnerCalidadSuenio"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="18dp"
+        android:text="Guardar Datos" />
 
 
 
+    <!-- Agregar un componente para el gráfico (ejemplo: BarChart) según la biblioteca utilizada -->
+    <!-- Puedes ajustar los atributos según sea necesario -->
+
+    <Button
+        android:id="@+id/btnEliminarDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerCalidadSuenio"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/btnGuardarDatos"
+        android:text="Eliminar Datos"
+        android:onClick="deleteAllSuenios"/>
 
 
-    //<!-- TextView para mostrar los registros de sueño -->
+    <com.github.mikephil.charting.charts.CombinedChart
+        android:id="@+id/combinedChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGuardarDatos"
+        android:layout_marginTop="-1dp" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/combinedChart"
+        android:layout_marginTop="10dp">
 
         <TextView
-            android:id="@+id/textViewRegistros"
+            android:id="@+id/textViewSuenioRecords"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:text="Registros de sueño:\n\n"
             android:textSize="18sp"
             android:textColor="@color/white"
             android:gravity="bottom"
@@ -99,3 +93,4 @@
     </ScrollView>
 
 </RelativeLayout>
+

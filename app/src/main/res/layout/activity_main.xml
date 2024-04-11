@@ -1,15 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".mainActivity"
-    android:background="@color/cool_blue">
-
-
-
-
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".mainActivity" android:background="@color/cool_blue">
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
@@ -17,7 +6,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.0"/>
 
         <TextView
             android:id="@+id/textView2"
@@ -31,7 +20,7 @@
             app:layout_constraintEnd_toStartOf="parent"
             app:layout_constraintStart_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.027" />
+            app:layout_constraintVertical_bias="0.027"/>
 
         <TextView
             android:id="@+id/textView9"
@@ -45,7 +34,7 @@
             app:layout_constraintEnd_toStartOf="parent"
             app:layout_constraintStart_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.56" />
+            app:layout_constraintVertical_bias="0.56"/>
 
         <EditText
             android:id="@+id/digitarCorreo"
@@ -60,7 +49,7 @@
             app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.639" />
+            app:layout_constraintVertical_bias="0.639"/>
 
         <EditText
             android:id="@+id/digitarContrasenia"
@@ -76,8 +65,7 @@
             app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.725" />
-
+            app:layout_constraintVertical_bias="0.725"/>
 
         <Button
             android:id="@+id/btnIniciarSesion"
@@ -94,10 +82,9 @@
             app:layout_constraintHorizontal_bias="0.944"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.823" />
+            app:layout_constraintVertical_bias="0.823"/>
 
-        <Button
-            android:id="@+id/btnRegistrarse"
+        <Button android:id="@+id/btnRegistrarse"
             android:layout_width="121dp"
             android:layout_height="46dp"
             android:backgroundTint="@color/cool_gray"
@@ -112,8 +99,7 @@
             app:layout_constraintHorizontal_bias="0.055"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.823" />
-
+            app:layout_constraintVertical_bias="0.823"/>
 
         <TextView
             android:id="@+id/btnOlvidoContrasenia"
@@ -126,10 +112,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.904" />
+            app:layout_constraintVertical_bias="0.904"/>
 
-        <ImageView
-            android:id="@+id/imgsg"
+        <ImageView android:id="@+id/imgsg"
             android:layout_width="291dp"
             android:layout_height="309dp"
             android:gravity="center_vertical"
@@ -138,8 +123,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.179"
-            app:srcCompat="@drawable/saludgeneral" />
-
+            app:srcCompat="@drawable/saludgeneral"/>
 
         <ImageView
             android:id="@+id/imageView7"
@@ -151,7 +135,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.871" />
+            app:layout_constraintVertical_bias="0.871"/>
 
         <Button
             android:id="@+id/GButton"
@@ -164,9 +148,6 @@
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.848" />
+            app:layout_constraintVertical_bias="0.848"/>
 
-
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

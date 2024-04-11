@@ -17,16 +17,17 @@
             android:textColorHint="@color/cool_gray"
             android:textColor="@color/black"
             android:hint="Nombre del alimento: "
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="-10dp" />
 
-        <EditText
-            android:id="@+id/editTextMealType"
+        <Spinner
+            android:id="@+id/spinnerMealType"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="@color/cool_gray"
-            android:textColor="@color/black"
-            android:hint="Tipo de comida (Desayuno, Media Mañana, Almuerzo, Merienda, Cena.): "
-            android:layout_marginBottom="16dp" />
+            android:background="@color/black"
+            android:layout_below="@id/editTextHoraFin"
+            android:layout_marginTop="17dp"/>
+
+
 
         <EditText
             android:id="@+id/editTextCaloriesEntry"
@@ -36,6 +37,7 @@
             android:textColor="@color/black"
             android:hint="Calorías: "
             android:inputType="number"
+            android:layout_marginTop="6dp"
             android:layout_marginBottom="16dp" />
 
         <!-- Nuevos campos para porciones y recomendaciones -->
@@ -43,10 +45,10 @@
             android:id="@+id/editTextPortions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="-14dp"
             android:hint="Porción o Cantidad: "
             android:textColorHint="@color/cool_gray"
             android:textColor="@color/black"
-            android:inputType="number"
             android:layout_marginBottom="16dp" />
 
         <TextView

@@ -41,34 +41,29 @@
 
 
 
-        <EditText
-            android:id="@+id/editTextGenero"
+        <Spinner
+            android:id="@+id/spinnerGenero"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Genero: "
-            android:focusableInTouchMode="true"
-            android:layout_marginTop="8dp"
-            android:inputType="text"
-            android:focusable="true" />
+            android:layout_marginTop="16dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerGrupoSanguineo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+
+
 
         <EditText
-            android:id="@+id/editTextGrupoSanguineo"
+            android:id="@+id/editTextTelefonoContacto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Grupo sanguineo: "
+            android:hint="Teléfono de contacto: "
             android:focusableInTouchMode="true"
             android:layout_marginTop="8dp"
-            android:inputType="text"
-            android:focusable="true" />
-
-        <EditText
-            android:id="@+id/editTextContactoEmergencia"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Contacto emergencia: "
-            android:focusableInTouchMode="true"
-            android:layout_marginTop="8dp"
-            android:inputType="text"
+            android:inputType="numberDecimal"
             android:focusable="true" />
 
 
@@ -176,15 +171,6 @@
             android:inputType="text"
             android:focusable="true" />
 
-        <EditText
-            android:id="@+id/editTextFechaDiagnostico"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Fecha Diagnostico: "
-            android:focusableInTouchMode="true"
-            android:layout_marginTop="8dp"
-            android:inputType="text"
-            android:focusable="true" />
 
         <EditText
             android:id="@+id/editTextGravedad"
@@ -214,6 +200,17 @@
             android:layout_marginTop="16sp"
             android:layout_below="@id/editTextTratamientos"
             android:text="Guardar" />
+
+        <TextView
+            android:id="@+id/textViewDatosFirebase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registros de historia clínica:\n\n"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:gravity="bottom"
+            android:padding="16dp"/>
+
 
 
     </LinearLayout>

@@ -54,23 +54,28 @@
         android:layout_toEndOf="@id/btnCalculateBMI"
         android:text="Eliminar Registros" />
 
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="24dp" />
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/barChart"
         android:layout_marginTop="24dp">
 
         <TextView
             android:id="@+id/textViewWeightRecords"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textViewResult"
-            android:gravity="bottom"
-            android:padding="16dp"
-            android:layout_marginTop="500dp"
             android:text="Registros de peso:"
+            android:textSize="18sp"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:gravity="bottom"
+            android:padding="16dp"/>
     </ScrollView>
 
 </RelativeLayout>
