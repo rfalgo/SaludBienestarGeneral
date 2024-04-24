@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".asesoriaS">
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="¿Necesitas consejos de salud más específicos? \n\nEstamos aquí para ayudarte. Nuestro equipo de expertos en salud está disponible para ofrecerte asesoría personalizada y sincrónica, para que puedas obtener respuestas a tus preguntas en tiempo real.\n\nCon nuestras sesiones de asesoría, podrás:\n\n- Hablar con un Especialista: Recibe consejos de profesionales de la salud con experiencia en diversos campos.\n- Obtener Respuestas Rápidas: Pregunta y recibe respuestas en tiempo real para tus inquietudes más urgentes.\n- Obtener Recomendaciones Personalizadas: Con nuestros expertos, recibirás consejos y recomendaciones adaptadas a tus necesidades únicas."
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMoreInfo"  />
+
+    <!-- Botón para el enlace al correo electrónico -->
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="124dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81"
+        app:srcCompat="@drawable/right_arrow" />
+
+    <TextView
+        android:id="@+id/buttonMoreInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="saludbienestargeneral@gmail.com"
+        android:autoLink="email"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInfo"
+        android:padding="10dp"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

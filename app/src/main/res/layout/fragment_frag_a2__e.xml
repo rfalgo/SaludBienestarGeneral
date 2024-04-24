@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="276dp"
+    android:background="@color/cool_blue"
+    android:layout_gravity="bottom"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    tools:context=".fragA2_E">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="160dp"
+                    android:layout_gravity="center"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:rotationX="14"
+                    android:src="@drawable/entrenador" />
+
+                <TextView
+                    android:id="@+id/textView_column1"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:gravity="bottom|center"
+                    android:text="Fabio Prieto Molina"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/textView_column1.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Entrenador Profesional "
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/emailTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:autoLink="web"
+                    android:gravity="center"
+                    android:text="Facebook: https://www.facebook.com/"
+                    android:textColor="@color/black"
+                    android:textColorLink="@color/blue" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView6_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Entrenador profesional con una Licenciatura en Ciencias de la Actividad Física y del Deporte de la Universidad de Valencia, un Máster en Entrenamiento Deportivo y Nutrición Deportiva de la Universidad Internacional de Valencia y una Certificación en Entrenamiento Personal Online de la National Academy of Sports Medicine (NASM). Tiene 3 años de experiencia como entrenador personal en un gimnasio y 1 año como entrenador de un equipo universitario de baloncesto, y actualmente trabaja como entrenador deportivo online, ofreciendo programas personalizados de entrenamiento a través de plataformas digitales."
+                android:textColor="@color/black" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

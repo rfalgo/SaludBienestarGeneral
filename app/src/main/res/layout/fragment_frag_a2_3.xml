@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="270dp"
+    android:layout_height="330dp"
+    android:background="@color/cool_green"
+    android:layout_gravity="end"
+    android:layout_marginStart="40dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    tools:context=".fragA2_3">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="151dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:text="Encuentra técnicas que te ayuden a manejar el estrés, como la meditación, el yoga, la respiración profunda o actividades que te relajen."
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="262dp"
+        android:layout_height="99dp"
+        android:layout_gravity="center"
+        android:gravity="bottom|center"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="0dp"
+        android:paddingBottom="0dp"
+        android:text="Manejo del estrés"
+        android:textColor="@color/red"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageViewA3"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:src="@drawable/chakra" />
+
+
+</FrameLayout>
