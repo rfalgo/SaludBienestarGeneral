@@ -114,7 +114,7 @@ class mainActivity : AppCompatActivity() {
             val view = layoutInflater.inflate(R.layout.restablecer_contrasenia, null)
             val username = view.findViewById<EditText>(R.id.ingresarCorreo_RP)
             builder.setView(view)
-            builder.setPositiveButton("Restablecida", DialogInterface.OnClickListener { _, _ ->
+            builder.setPositiveButton("Restablecer Contraseña", DialogInterface.OnClickListener { _, _ ->
                 forgotPassword(username)
             })
             builder.setNegativeButton("Cerrar", DialogInterface.OnClickListener { _, _ -> })
