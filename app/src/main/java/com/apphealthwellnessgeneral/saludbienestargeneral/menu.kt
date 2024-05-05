@@ -59,7 +59,7 @@ class menu : AppCompatActivity() {
     private fun shareApp (){
         val intent= Intent().apply {
             action= Intent.ACTION_SEND
-            putExtra(Intent.EXTRA_TEXT,"¿Quieres mejorar tu salud? Descargue ya la aplicación Salud General desde la Play Store: https://play.google.com/store/games?hl=es_CO&gl=US&pli=1")
+            putExtra(Intent.EXTRA_TEXT,"¿Quieres mejorar tu salud? Conoce ya la aplicación Salud Bienestar General. Contáctanos en: saludbienestargeneral@gmail.com")
             type= "text/plain"
         }
         val shareIntent = Intent.createChooser(intent, null)
