@@ -239,7 +239,7 @@ class suenio : AppCompatActivity() {
         combinedChart.data = data
 
         // Ajustar el tamaño del gráfico según sea necesario
-        combinedChart.setMinimumHeight(1000)
+        combinedChart.setMinimumHeight(775)
 
         // Para deshabilitar las etiquetas de descripción (description)
         combinedChart.description.isEnabled = false

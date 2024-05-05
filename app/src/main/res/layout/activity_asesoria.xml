@@ -1,5 +1,5 @@
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -25,7 +25,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.761"
-        app:strokeColor="@color/cool_gray"/>
+        app:strokeColor="@color/cool_gray" />
 
     <Button
         android:id="@+id/btnAsesoriaAsincronica"
@@ -41,7 +41,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.035"
-        app:strokeColor="@color/cool_gray"/>
+        app:strokeColor="@color/cool_gray" />
 
     <TextView
         android:id="@+id/A1"
@@ -49,14 +49,16 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
-        android:text="Asesoría Específica Sincrónica (Opción Premium)"
-        android:textColor="@color/black" android:textSize="23dp"
+        android:text="Asesoría Específica Sincrónica
+        (Opción Premium)"
+        android:textColor="@color/black"
+        android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.961"/>
+        app:layout_constraintVertical_bias="0.961" />
 
     <TextView
         android:id="@+id/A2"
@@ -64,13 +66,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
-        android:text="Asesoría General Asincrónica"
+        android:text="Consejos Generales Asincrónicos"
         android:textColor="@color/black"
         android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.414"/>
+        app:layout_constraintVertical_bias="0.414" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

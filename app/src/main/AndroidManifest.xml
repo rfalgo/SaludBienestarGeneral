@@ -28,6 +28,12 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".asesoriaA"
+            android:exported="false" />
+        <activity
+            android:name=".asesoriaS"
+            android:exported="false" />
+        <activity
             android:name=".acercaNosotros"
             android:exported="false"
             android:screenOrientation="portrait" />

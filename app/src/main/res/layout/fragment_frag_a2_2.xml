@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="270dp"
+    android:layout_width="260dp"
     android:layout_height="330dp"
     android:background="@color/cool_green"
     android:layout_gravity="end"
@@ -16,7 +16,7 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="153dp"
+        android:layout_height="144dp"
         android:layout_gravity="bottom"
         android:gravity="bottom"
         android:paddingStart="8dp"
@@ -29,7 +29,7 @@
 
     <TextView
         android:layout_width="262dp"
-        android:layout_height="101dp"
+        android:layout_height="70dp"
         android:layout_gravity="center"
         android:gravity="bottom|center|center_horizontal"
         android:paddingStart="0dp"
@@ -43,7 +43,7 @@
     <ImageView
         android:id="@+id/imageViewA2"
         android:layout_width="match_parent"
-        android:layout_height="197dp"
+        android:layout_height="174dp"
         android:src="@drawable/pesa" />
 
 </FrameLayout>
